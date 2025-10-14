@@ -1,48 +1,42 @@
 // src/components/layout/Footer.tsx
 import Link from 'next/link';
 import Container from './Container';
-import { NAV_LINKS, FOOTER_TEXT } from '@/components/lib/constants';
 
 export default function Footer() {
   return (
-    <footer className="bg-muted border-t border-gray-200 py-12 mt-20">
+    <footer className="bg-white border-t border-gray-200 py-8">
       <Container>
-        <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+        <div className="flex flex-col md:flex-row justify-between items-center gap-6">
           {/* Logo & Tagline */}
-          <div>
-            <h3 className="text-2xl font-bold font-heading text-primary mb-3">
-              Àlàáfíà
-            </h3>
-            <p className="text-gray-600 text-sm">
-              {FOOTER_TEXT.tagline}
-            </p>
+          <div className="flex items-center gap-3">
+            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
+              <span className="text-white font-bold text-lg">A</span>
+            </div>
+            <div>
+              <h3 className="text-base font-bold text-neutral">Àlàáfíà</h3>
+              <p className="text-sm text-gray-600">Prosperity rooted in people & places</p>
+            </div>
           </div>
 
           {/* Navigation Links */}
-          <div>
-            <h4 className="text-lg font-semibold text-neutral mb-4">
-              Quick Links
-            </h4>
-            <ul className="space-y-2">
-              {NAV_LINKS.map((link) => (
-                <li key={link.href}>
-                  <Link
-                    href={link.href}
-                    className="text-gray-600 hover:text-primary transition-colors duration-300 text-sm"
-                  >
-                    {link.label}
-                  </Link>
-                </li>
-              ))}
-            </ul>
+          <div className="flex items-center gap-8">
+            <Link href="/about" className="text-sm text-gray-700 hover:text-primary transition-colors">
+              About
+            </Link>
+            <Link href="/model" className="text-sm text-gray-700 hover:text-primary transition-colors">
+              Our Model
+            </Link>
+            <Link href="/contact" className="text-sm text-gray-700 hover:text-primary transition-colors">
+              Contact
+            </Link>
           </div>
+        </div>
 
-          {/* Copyright */}
-          <div className="md:text-right">
-            <p className="text-gray-600 text-sm">
-              {FOOTER_TEXT.copyright}
-            </p>
-          </div>
+        {/* Copyright */}
+        <div className="text-center mt-8 pt-6 border-t border-gray-200">
+          <p className="text-sm text-gray-600">
+            © 2025 Àlàáfíà. All rights reserved
+          </p>
         </div>
       </Container>
     </footer>

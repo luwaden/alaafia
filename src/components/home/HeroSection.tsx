@@ -3,54 +3,58 @@
 import { motion } from 'framer-motion';
 import Container from '@/components/layout/Container';
 import Button from '@/components/shared/Button';
-import GradientText from '@/components/ui/GradientText';
-import ResponsiveImage from '@/components/ui/ResponsiveImage';
 import { fadeInUp, slideInLeft, slideInRight } from '@/components/lib/animations';
-import { HERO_TEXT } from '@/components/lib/constants';
 
 export default function HeroSection() {
   return (
-    <section className="relative py-16 md:py-24 lg:py-32 overflow-hidden">
+    <section className="py-12 md:py-16 lg:py-20">
       <Container>
-        <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
-          {/* Text Content */}
+        <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start mb-8">
+          {/* Left: Headline */}
           <motion.div
             variants={slideInLeft}
             initial="hidden"
             animate="visible"
-            className="space-y-6"
           >
-            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold text-neutral leading-tight">
-              Unlocking <GradientText>Credit</GradientText>.{' '}
+            <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold leading-tight">
+              Unlocking <span className="text-primary">Credit</span>.
+              <br />
               Powering <span className="text-accent">Possibilities</span>.
             </h1>
-            <p className="text-lg md:text-xl text-gray-600 leading-relaxed max-w-xl">
-              {HERO_TEXT.subtitle}
-            </p>
-            <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button variant="primary" size="lg" href="/model">
-                Our Model
-              </Button>
-              <Button variant="outline" size="lg" href="/contact">
-                Get Started
-              </Button>
-            </div>
           </motion.div>
 
-          {/* Hero Image */}
+          {/* Right: Description and CTA */}
           <motion.div
             variants={slideInRight}
             initial="hidden"
             animate="visible"
-            className="relative h-[400px] md:h-[500px] lg:h-[600px] rounded-2xl overflow-hidden shadow-2xl"
+            className="space-y-6"
           >
-            <ResponsiveImage
-              src="/images/hero.jpg"
-              alt="Nigerian nano-business owner"
-              priority
-            />
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed">
+              Alaafia provides fast, fair, and flexible credit for Nigeria's nano-businesses — 
+              traders, artisans, and smallholder farmers who keep our communities alive yet 
+              remain invisible to traditional finance.
+            </p>
+            <Button variant="primary" size="md" href="/model">
+              Our Model
+            </Button>
           </motion.div>
         </div>
+
+        {/* Hero Image */}
+        <motion.div
+          variants={fadeInUp}
+          initial="hidden"
+          animate="visible"
+          transition={{ delay: 0.3 }}
+          className="w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl overflow-hidden"
+        >
+          <img
+            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&h=600&fit=crop"
+            alt="Nigerian market vendor"
+            className="w-full h-full object-cover"
+          />
+        </motion.div>
       </Container>
     </section>
   );

@@ -2,50 +2,71 @@
 'use client';
 import { motion } from 'framer-motion';
 import Container from '@/components/layout/Container';
-import SectionTitle from '@/components/shared/SectionTitle';
-import ResponsiveImage from '@/components/ui/ResponsiveImage';
-import { fadeInUp, staggerContainer } from '@/components/lib/animations';
-import { PROBLEM_TEXT } from '@/components/lib/constants';
+import { fadeInUp } from '@/components/lib/animations';
 
 export default function ProblemSection() {
   return (
-    <section className="py-16 md:py-24 bg-muted">
+    <section className="py-12 md:py-16 lg:py-20 bg-muted">
       <Container>
-        <motion.div
-          variants={fadeInUp}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.3 }}
-          className="text-center mb-12"
-        >
-          <SectionTitle
-            title={PROBLEM_TEXT.title}
-            subtitle={PROBLEM_TEXT.description}
-            align="center"
-          />
-        </motion.div>
-
-        <motion.div
-          variants={staggerContainer}
-          initial="hidden"
-          whileInView="visible"
-          viewport={{ once: true, amount: 0.2 }}
-          className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 mt-12"
-        >
-          {[1, 2, 3].map((index) => (
-            <motion.div
-              key={index}
-              variants={fadeInUp}
-              className="relative h-[400px] rounded-2xl overflow-hidden shadow-lg"
-            >
-              <ResponsiveImage
-                src={`/images/problem-${index}.jpg`}
-                alt={`Nano-business example ${index}`}
+        <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 items-center">
+          {/* Left Image */}
+          <motion.div
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="w-full lg:w-1/4"
+          >
+            <div className="w-full h-[280px] md:h-[340px] rounded-3xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=400&h=500&fit=crop"
+                alt="Nano business owner 1"
+                className="w-full h-full object-cover"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-black/60 to-transparent" />
-            </motion.div>
-          ))}
-        </motion.div>
+            </div>
+          </motion.div>
+
+          {/* Center Content */}
+          <motion.div
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="w-full lg:w-1/2 text-center space-y-4"
+          >
+            <div className="inline-block px-4 py-1.5 bg-neutral text-white text-sm font-medium rounded-full mb-4">
+              The Problem
+            </div>
+            <h2 className="text-3xl md:text-4xl lg:text-5xl font-bold text-neutral">
+              Excluded but not Invisible.
+            </h2>
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+              Across Nigeria, 32 million of hardworking nano-business owners run their 
+              businesses without fair access to credit. They are seen in every market, every 
+              street corner—yet when it comes to finance, they are shut out.
+            </p>
+            <p className="text-base md:text-lg text-gray-700 leading-relaxed max-w-2xl mx-auto">
+              The result? Limited growth, daily struggles, and opportunities lost.
+            </p>
+          </motion.div>
+
+          {/* Right Image */}
+          <motion.div
+            variants={fadeInUp}
+            initial="hidden"
+            whileInView="visible"
+            viewport={{ once: true }}
+            className="w-full lg:w-1/4"
+          >
+            <div className="w-full h-[280px] md:h-[340px] rounded-3xl overflow-hidden">
+              <img
+                src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=500&fit=crop"
+                alt="Nano business owner 2"
+                className="w-full h-full object-cover"
+              />
+            </div>
+          </motion.div>
+        </div>
       </Container>
     </section>
   );
