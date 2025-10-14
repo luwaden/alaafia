@@ -59,3 +59,23 @@ export const FOOTER_TEXT = {
   tagline: 'Empowering communities through accessible finance.',
   copyright: '© 2025 Àlàáfíà. All rights reserved.',
 };
+
+
+
+
+
+export const ABOUT_CONTENT = {
+  hero: {
+    title: 'Lighting up possibilities in overlooked places',
+    description1: 'Alaafia is a fintech company unlocking credit for Nigeria\'s most underserved nano-businesses — street traders, market women, artisans, and smallholder farmers — who are excluded from traditional finance.',
+    description2: 'We believe financial inclusion isn\'t about charity. It\'s about trust, dignity, and opportunity. Every day, over 32 million hardworking nano-business traders are forced to run on tiny margins, not because they lack ambition, but because the financial system wasn\'t designed for them. Alaafia is changing that.',
+  },
+  vision: {
+    title: 'Our Vision',
+    description: 'At Alaafia, we\'ve reimagined credit for the realities of everyday life. Our unique approach blends trust, culture, and technology into a Triple Layer Trust (TLT) system.',
+  },
+  mission: {
+    title: 'Our Mission',
+    description: 'To unlock the hidden wealth of underserved people and places by providing fast, fair, and flexible credit built on trust, culture, and technology.',
+  },
+};
