@@ -79,3 +79,30 @@ export const ABOUT_CONTENT = {
     description: 'To unlock the hidden wealth of underserved people and places by providing fast, fair, and flexible credit built on trust, culture, and technology.',
   },
 };
+
+
+
+export const MODEL_CONTENT = {
+  hero: {
+    title: 'The Àlàáfíà Model',
+    subtitle: 'A trust-first, tech-enabled lending system designed to unlock economic potential for nano-businesses across Africa through group accountability and smart automation.',
+  },
+  corePrinciples: [
+    {
+      title: 'Trust-First Design',
+      description: 'Group-based lending with community accountability',
+    },
+    {
+      title: 'Offline-Resilient',
+      description: 'Works via USSD, SMS, and voice for all users',
+    },
+    {
+      title: 'Scalable automation',
+      description: 'Smart systems reduce costs while maintaining trust',
+    },
+    {
+      title: 'Risk controls',
+      description: 'Layered security with behavioral scoring',
+    },
+  ],
+};
