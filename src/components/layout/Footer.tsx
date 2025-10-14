@@ -3,16 +3,20 @@ import Link from 'next/link';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import Container from './Container';
 
+type NavLink = {
+  label: string;
+  href: string;
+};
 export default function Footer() {
-  const quickLinks = [
+  const quickLinks:NavLink[] = [
     { label: 'About Us', href: '/about' },
     { label: 'How It Works', href: '/model' },
     { label: 'For Business Owners', href: '/model' },
     { label: 'Become an MCP', href: '/contact' },
   ];
 
-  const resources = [
-    { label: 'FAQs', href: '#' },
+  const resources:NavLink[] = [
+    { label: 'FAQs', href: '/faqs' },
     { label: 'Support', href: '/contact' },
     { label: 'Privacy Policy', href: '#' },
     { label: 'Terms of service', href: '#' },
