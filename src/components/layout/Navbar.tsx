@@ -5,7 +5,7 @@ import Link from 'next/link';
 import { usePathname } from 'next/navigation';
 import { Menu, X } from 'lucide-react';
 import Container from './Container';
-
+import Image from "next/image";
 export default function Navbar() {
   const [isOpen, setIsOpen] = useState(false);
   const pathname = usePathname();
@@ -23,10 +23,14 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-           <img
+            import Image from "next/image";
+
+<Image
   src="https://res.cloudinary.com/dergk96ic/image/upload/v1760512417/logo-alaafia_xweirs.png"
   alt="Àlàáfíà Logo"
-  className="w-8 h-8 object-contain"
+  width={32}
+  height={32}
+  className="object-contain"
 />
 
             <span className="text-xl font-bold text-neutral hidden sm:block">Àlàáfíà</span>

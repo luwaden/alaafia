@@ -38,15 +38,15 @@ export default function Footer() {
               <div className="space-y-2 text-sm text-white/90">
                 <div className="flex items-center gap-2">
                   <Mail className="w-4 h-4" />
-                  <span>support@alaafia.com</span>
+                  <span>support@alaafiahq.com</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <Phone className="w-4 h-4" />
-                  <span>+234 (0) XXX XXXX</span>
+                  <span>+234 (0) 808 111 6723</span>
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
-                  <span>Ogbomosho, Nigeria</span>
+                  <span>The Assembly, Ogbomosho,Oyo state Nigeria</span>
                 </div>
               </div>
             </div>
