@@ -18,7 +18,7 @@ export default function AboutHeroSection() {
           >
             <div className="w-full h-[350px] md:h-[450px] rounded-3xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1523539693385-e5e891eb4465?w=800&h=600&fit=crop"
+                src="https://res.cloudinary.com/dergk96ic/image/upload/v1760511633/about-image_s2xyzm.png"
                 alt="Market scene in Nigeria"
                 className="w-full h-full object-cover"
               />

@@ -19,7 +19,7 @@ export default function ProblemSection() {
           >
             <div className="w-full h-[280px] md:h-[340px] rounded-3xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1609137144813-7d9921338f24?w=400&h=500&fit=crop"
+                src="https://res.cloudinary.com/dergk96ic/image/upload/v1760511502/image_2_of_seller_bnljq9.png"
                 alt="Nano business owner 1"
                 className="w-full h-full object-cover"
               />
@@ -60,7 +60,7 @@ export default function ProblemSection() {
           >
             <div className="w-full h-[280px] md:h-[340px] rounded-3xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1625246333195-78d9c38ad449?w=400&h=500&fit=crop"
+                src="https://res.cloudinary.com/dergk96ic/image/upload/v1760511507/image_3_of_seller_e436h6.png"
                 alt="Nano business owner 2"
                 className="w-full h-full object-cover"
               />

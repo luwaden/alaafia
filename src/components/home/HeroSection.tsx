@@ -50,7 +50,7 @@ export default function HeroSection() {
           className="w-full h-[300px] md:h-[400px] lg:h-[500px] rounded-3xl overflow-hidden"
         >
           <img
-            src="https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?w=1200&h=600&fit=crop"
+            src="https://res.cloudinary.com/dergk96ic/image/upload/v1760511497/alaafia_main_hero_1_easlrv.png"
             alt="Nigerian market vendor"
             className="w-full h-full object-cover"
           />

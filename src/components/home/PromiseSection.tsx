@@ -10,7 +10,7 @@ export default function PromiseSection() {
       {/* Background Image */}
       <div className="absolute inset-0">
         <img
-          src="https://images.unsplash.com/photo-1591634616938-1dfa7ee2e617?w=1600&h=900&fit=crop"
+          src="https://res.cloudinary.com/dergk96ic/image/upload/v1760511626/image_5_of_market_ysj2pm.png"
           alt="Community prosperity"
           className="w-full h-full object-cover"
         />

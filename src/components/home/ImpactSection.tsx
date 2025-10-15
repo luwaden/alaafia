@@ -51,7 +51,7 @@ export default function ImpactSection() {
             className="relative h-[400px] md:h-[500px] rounded-3xl overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1557804506-669a67965ba0?w=800&h=600&fit=crop"
+              src="https://res.cloudinary.com/dergk96ic/image/upload/v1760511596/image_4_of_market_ik1phj.png"
               alt="Market impact"
               className="w-full h-full object-cover"
             />

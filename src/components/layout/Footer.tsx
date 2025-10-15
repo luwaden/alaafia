@@ -56,7 +56,7 @@ export default function Footer() {
               <h4 className="text-lg font-semibold text-white mb-4">Quick Links</h4>
               <ul className="space-y-2">
                 {quickLinks.map((link) => (
-                  <li key={link.href}>
+                  <li key={`${link.href}-${link.label}`}>
                     <Link
                       href={link.href}
                       className="text-white/90 hover:text-white transition-colors text-sm"

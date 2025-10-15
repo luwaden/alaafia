@@ -36,7 +36,7 @@ export default function MissionSection() {
           >
             <div className="w-full h-[350px] md:h-[400px] rounded-3xl overflow-hidden">
               <img
-                src="https://images.unsplash.com/photo-1591634616938-1dfa7ee2e617?w=800&h=600&fit=crop"
+                src="https://res.cloudinary.com/dergk96ic/image/upload/v1760511638/ourMission-image_vwimw8.png"
                 alt="Market vendors"
                 className="w-full h-full object-cover"
               />

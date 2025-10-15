@@ -33,7 +33,7 @@ export default function ContactHeroSection() {
             className="relative h-[350px] md:h-[400px] rounded-3xl overflow-hidden"
           >
             <img
-              src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?w=800&h=600&fit=crop"
+              src="https://res.cloudinary.com/dergk96ic/image/upload/v1760511657/Black_woman_call_center_and_consulting_on_laptop_in_customer_service_support_or_telemarketing_at_home__African_freelance_person_or_consultant_agent_talking_on_computer_with_headset_in_online_advice_Stock_Photo_kuzfxi.png"
               alt="Customer support representative"
               className="w-full h-full object-cover"
             />
