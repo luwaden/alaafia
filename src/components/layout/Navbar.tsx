@@ -23,7 +23,6 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            import Image from "next/image";
 
 <Image
   src="https://res.cloudinary.com/dergk96ic/image/upload/v1760512417/logo-alaafia_xweirs.png"
