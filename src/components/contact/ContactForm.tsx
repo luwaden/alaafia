@@ -1,9 +1,10 @@
-// src/components/contact/ContactForm.tsx
 'use client';
+
 import { useState } from 'react';
-import Button from '@/components/shared/Button';
+import { toast } from 'sonner';
 
 export default function ContactForm() {
+  const [isSubmitting, setIsSubmitting] = useState(false);
   const [formData, setFormData] = useState({
     fullName: '',
     email: '',
@@ -11,18 +12,47 @@ export default function ContactForm() {
     message: '',
   });
 
-  const handleSubmit = (e: React.FormEvent) => {
-    e.preventDefault();
-    // Handle form submission
-    console.log('Form submitted:', formData);
-  };
-
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (
+    e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>
+  ) => {
     setFormData({
       ...formData,
       [e.target.name]: e.target.value,
     });
   };
+
+  const handleSubmit = async (e: React.FormEvent) => {
+  e.preventDefault();
+  setIsSubmitting(true);
+
+  try {
+    const scriptURL = 'https://formspree.io/f/mzzjyrkb';
+
+    const response = await fetch(scriptURL, {
+      method: 'POST',
+      headers: {
+        'Accept': 'application/json',
+        'Content-Type': 'application/json',
+      },
+      body: JSON.stringify(formData),
+    });
+
+    const result = await response.json();
+
+    if (response.ok) {
+      toast.success('Message sent successfully!');
+      setFormData({ fullName: '', email: '', phone: '', message: '' });
+    } else {
+      toast.error(result.error || 'Something went wrong.');
+    }
+
+  } catch (error) {
+    console.error('Error submitting form:', error);
+    toast.error('An error occurred. Please try again later.');
+  } finally {
+    setIsSubmitting(false);
+  }
+};
 
   return (
     <div className="bg-gradient-to-br from-blue-100 to-blue-200 rounded-3xl p-8 md:p-10">
@@ -31,9 +61,11 @@ export default function ContactForm() {
       </h2>
 
       <form onSubmit={handleSubmit} className="space-y-6">
-        {/* Full Name */}
         <div>
-          <label htmlFor="fullName" className="block text-sm font-semibold text-primary mb-2">
+          <label
+            htmlFor="fullName"
+            className="block text-sm font-semibold text-primary mb-2"
+          >
             Full name
           </label>
           <input
@@ -48,9 +80,11 @@ export default function ContactForm() {
           />
         </div>
 
-        {/* Email Address */}
         <div>
-          <label htmlFor="email" className="block text-sm font-semibold text-primary mb-2">
+          <label
+            htmlFor="email"
+            className="block text-sm font-semibold text-primary mb-2"
+          >
             Email Address
           </label>
           <input
@@ -65,9 +99,11 @@ export default function ContactForm() {
           />
         </div>
 
-        {/* Phone Number */}
         <div>
-          <label htmlFor="phone" className="block text-sm font-semibold text-primary mb-2">
+          <label
+            htmlFor="phone"
+            className="block text-sm font-semibold text-primary mb-2"
+          >
             Phone number
           </label>
           <input
@@ -82,9 +118,11 @@ export default function ContactForm() {
           />
         </div>
 
-        {/* Message */}
         <div>
-          <label htmlFor="message" className="block text-sm font-semibold text-primary mb-2">
+          <label
+            htmlFor="message"
+            className="block text-sm font-semibold text-primary mb-2"
+          >
             Message
           </label>
           <textarea
@@ -99,12 +137,13 @@ export default function ContactForm() {
           />
         </div>
 
-        {/* Submit Button */}
         <button
           type="submit"
-          className="w-full bg-primary text-white font-semibold py-3 px-6 rounded-xl hover:bg-blue-700 transition-colors duration-200 shadow-lg hover:shadow-xl"
+          disabled={isSubmitting}
+          className={`w-full ${isSubmitting ? 'bg-gray-400' : 'bg-primary hover:bg-blue-700'
+            } text-white font-semibold py-3 px-6 rounded-xl transition-colors duration-200 shadow-lg hover:shadow-xl`}
         >
-          Send Message
+          {isSubmitting ? 'Sending...' : 'Send Message'}
         </button>
       </form>
     </div>

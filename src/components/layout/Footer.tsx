@@ -2,24 +2,26 @@
 import Link from 'next/link';
 import { Mail, Phone, MapPin } from 'lucide-react';
 import Container from './Container';
+import Image from "next/image";
+import logo from "@/app/logo.png"
 
 type NavLink = {
   label: string;
   href: string;
 };
 export default function Footer() {
-  const quickLinks:NavLink[] = [
+  const quickLinks: NavLink[] = [
     { label: 'About Us', href: '/about' },
     { label: 'How It Works', href: '/model' },
     { label: 'For Business Owners', href: '/model' },
     { label: 'Become an MCP', href: '/contact' },
   ];
 
-  const resources:NavLink[] = [
+  const resources: NavLink[] = [
     { label: 'FAQs', href: '/faqs' },
     { label: 'Support', href: '/contact' },
-    { label: 'Privacy Policy', href: '#' },
-    { label: 'Terms of service', href: '#' },
+    { label: 'Privacy Policy', href: '/about' },
+    { label: 'Terms of service', href: '/about' },
   ];
 
   return (
@@ -32,7 +34,7 @@ export default function Footer() {
             <div>
               <h3 className="text-2xl font-bold text-white mb-4">Àlàáfíà</h3>
               <p className="text-white/90 text-sm leading-relaxed mb-6">
-                Transforming underserved nano-businesses across Africa through 
+                Transforming underserved nano-businesses across Africa through
                 trust-based group lending and community empowerment.
               </p>
               <div className="space-y-2 text-sm text-white/90">
@@ -73,7 +75,7 @@ export default function Footer() {
               <h4 className="text-lg font-semibold text-white mb-4">Resources</h4>
               <ul className="space-y-2">
                 {resources.map((link) => (
-                  <li key={link.href}>
+                  <li key={`${link.href}-${link.label}`}>
                     <Link
                       href={link.href}
                       className="text-white/90 hover:text-white transition-colors text-sm"
@@ -95,7 +97,13 @@ export default function Footer() {
             {/* Logo & Tagline */}
             <div className="flex items-center gap-3">
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-                <span className="text-white font-bold text-lg">A</span>
+                <Image
+                  src={logo}
+                  alt="Àlàáfíà Logo"
+                  width={30}
+                  height={30}
+                  className="object-contain"
+                />
               </div>
               <span className="text-sm text-gray-600">
                 Àlàáfíà. Prosperity rooted in people & places
@@ -118,13 +126,13 @@ export default function Footer() {
 
           {/* Copyright */}
           <div className="text-center mt-6 pt-6 border-t border-gray-200">
-  <p className="text-sm text-gray-600 flex items-center justify-center gap-2">
-    <span className="w-5 h-5 border-2 border-gray-400 rounded-full flex items-center justify-center text-xs">
-      ©
-    </span>
-    2025 Àlàáfíà. All rights reserved
-  </p>
-</div>
+            <p className="text-sm text-gray-600 flex items-center justify-center gap-2">
+              <span className="w-5 h-5 border-2 border-gray-400 rounded-full flex items-center justify-center text-xs">
+                ©
+              </span>
+              2025 Àlàáfíà. All rights reserved
+            </p>
+          </div>
 
         </Container>
       </div>

@@ -13,21 +13,21 @@ export default function ContactFormSection() {
       iconBg: 'bg-blue-100',
       iconColor: 'text-primary',
       title: 'Email',
-      details: ['support@alaafia.com', 'partnerships@alaafia.com'],
+      details: ['support@alaafiahq.com', 'partnerships@alaafiahq.com'],
     },
     {
       icon: Phone,
       iconBg: 'bg-yellow-100',
       iconColor: 'text-accent',
       title: 'Phone',
-      details: ['+234 XXX XXX XXXX', 'Mon-Fri: 8am-5pm WAT'],
+      details: ['+234 (0) 808 111 6723', 'Mon-Fri: 8am-5pm WAT'],
     },
     {
       icon: MapPin,
       iconBg: 'bg-yellow-100',
       iconColor: 'text-accent',
       title: 'Office',
-      details: ['Ogbomosho, Nigeria'],
+      details: ['The Assembly, Ogbomosho,Oyo state Nigeria'],
     },
   ];
 
