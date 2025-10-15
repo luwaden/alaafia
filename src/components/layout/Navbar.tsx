@@ -23,9 +23,12 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
           {/* Logo */}
           <Link href="/" className="flex items-center gap-2">
-            <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
-              <span className="text-white font-bold text-lg">A</span>
-            </div>
+           <img
+  src="https://res.cloudinary.com/dergk96ic/image/upload/v1760512417/logo-alaafia_xweirs.png"
+  alt="Àlàáfíà Logo"
+  className="w-8 h-8 object-contain"
+/>
+
             <span className="text-xl font-bold text-neutral hidden sm:block">Àlàáfíà</span>
           </Link>
 
