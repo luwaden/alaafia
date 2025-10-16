@@ -27,7 +27,7 @@ export default function ContactFormSection() {
       iconBg: 'bg-yellow-100',
       iconColor: 'text-accent',
       title: 'Office',
-      details: ['The Assembly, Ogbomosho,Oyo state Nigeria'],
+      details: ['The Assembly, Ogbomoso,Oyo state Nigeria'],
     },
   ];
 

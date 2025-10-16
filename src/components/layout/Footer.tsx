@@ -48,7 +48,7 @@ export default function Footer() {
                 </div>
                 <div className="flex items-center gap-2">
                   <MapPin className="w-4 h-4" />
-                  <span>The Assembly, Ogbomosho,Oyo state Nigeria</span>
+                  <span>The Assembly, Ogbomoso,Oyo state Nigeria</span>
                 </div>
               </div>
             </div>
@@ -99,14 +99,14 @@ export default function Footer() {
               <div className="w-8 h-8 bg-primary rounded-lg flex items-center justify-center">
                 <Image
                   src={logo}
-                  alt="Àlàáfíà Logo"
+                  alt="Alaafia Logo"
                   width={30}
                   height={30}
                   className="object-contain"
                 />
               </div>
               <span className="text-sm text-gray-600">
-                Àlàáfíà. Prosperity rooted in people & places
+                Alaafia. Prosperity rooted in people & places
               </span>
             </div>
 
@@ -130,7 +130,7 @@ export default function Footer() {
               <span className="w-5 h-5 border-2 border-gray-400 rounded-full flex items-center justify-center text-xs">
                 ©
               </span>
-              2025 Àlàáfíà. All rights reserved
+              2025 Alaafia. All rights reserved
             </p>
           </div>
 
