@@ -20,7 +20,7 @@ const dmSans = DM_Sans({
 });
 
 export const metadata: Metadata = {
-  title: 'Àlàáfíà - Unlocking Credit. Powering Possibilities.',
+  title: 'Alaafia - Unlocking Credit. Powering Possibilities.',
   description:
     "Empowering Nigeria's nano-businesses with accessible, trust-based financing.",
   icons: {

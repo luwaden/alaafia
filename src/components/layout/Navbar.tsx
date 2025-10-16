@@ -26,13 +26,13 @@ export default function Navbar() {
 
 <Image
   src="https://res.cloudinary.com/dergk96ic/image/upload/v1760512417/logo-alaafia_xweirs.png"
-  alt="Àlàáfíà Logo"
+  alt="Alaafia Logo"
   width={32}
   height={32}
   className="object-contain"
 />
 
-            <span className="text-xl font-bold text-neutral hidden sm:block">Àlàáfíà</span>
+            <span className="text-xl font-bold text-neutral hidden sm:block">Alaafia</span>
           </Link>
 
           {/* Desktop Navigation */}

@@ -7,7 +7,7 @@ import ImpactStatsSection from '@/components/about/ImpactStatsSection';
 import MeaningSection from '@/components/about/MeaningSection';
 
 export const metadata = {
-  title: 'About Us - Àlàáfíà',
+  title: 'About Us - Alaafia',
   description: 'Learn about our mission to unlock financial possibilities for Nigeria\'s nano-businesses',
 };
 

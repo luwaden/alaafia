@@ -5,7 +5,7 @@ import HowItWorksSection from '@/components/model/HowItWorksSection';
 import DifferenceSection from '@/components/model/DifferenceSection';
 
 export const metadata = {
-  title: 'Our Model - Àlàáfíà',
+  title: 'Our Model - Alaafia',
   description: 'A trust-first, tech-enabled lending system designed to unlock economic potential for nano-businesses across Africa',
 };
 

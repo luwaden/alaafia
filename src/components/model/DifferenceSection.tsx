@@ -49,7 +49,7 @@ export default function DifferenceSection() {
           className="text-center mb-12"
         >
           <h2 className="text-3xl md:text-4xl font-bold text-white">
-            What Makes Àlàáfíà Different
+            What Makes Alaafia Different
           </h2>
         </motion.div>
 

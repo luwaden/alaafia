@@ -51,13 +51,13 @@ export const IMPACT_TEXT = {
 };
 
 export const PROMISE_TEXT = {
-  title: 'Àlàáfíà Means Peace and Wellbeing.',
+  title: 'Alaafia Means Peace and Wellbeing.',
   description: 'We believe financial access is a pathway to peace of mind and community prosperity. Every loan we make is a step toward a more inclusive economy where hard work is rewarded and potential is unleashed.',
 };
 
 export const FOOTER_TEXT = {
   tagline: 'Empowering communities through accessible finance.',
-  copyright: '© 2025 Àlàáfíà. All rights reserved.',
+  copyright: '© 2025 Alaafia. All rights reserved.',
 };
 
 
@@ -84,7 +84,7 @@ export const ABOUT_CONTENT = {
 
 export const MODEL_CONTENT = {
   hero: {
-    title: 'The Àlàáfíà Model',
+    title: 'The Alaafia Model',
     subtitle: 'A trust-first, tech-enabled lending system designed to unlock economic potential for nano-businesses across Africa through group accountability and smart automation.',
   },
   corePrinciples: [

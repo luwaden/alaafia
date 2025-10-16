@@ -18,7 +18,7 @@ export default function ModelHeroSection() {
             variants={fadeInUp}
             className="text-4xl md:text-5xl lg:text-6xl font-bold text-primary mb-6"
           >
-            The Àlàáfíà Model
+            The Alaafia Model
           </motion.h1>
           <motion.p
             variants={fadeInUp}
