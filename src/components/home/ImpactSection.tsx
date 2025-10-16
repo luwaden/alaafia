@@ -7,11 +7,11 @@ import { fadeInUp, slideInLeft, slideInRight } from '@/components/lib/animations
 
 export default function ImpactSection() {
   const stats = [
-    { icon: DollarSign, label: '₦8M+ disbursed' },
-    { icon: Users, label: '59 businesses across 5 zones' },
+    { icon: DollarSign, label: '$6,000+ disbursed' },
+    { icon: Users, label: '71 nano businesses across 5 zones' },
     { icon: TrendingUp, label: '97% on-time daily repayments' },
-    { icon: AlertCircle, label: '8% defaults' },
-    { icon: Heart, label: 'Strong community trust and demand for expansion' },
+    { icon: AlertCircle, label: '0% defaults' },
+    { icon: Heart, label: '2000+ nano businesses awaiting service' },
   ];
 
   return (

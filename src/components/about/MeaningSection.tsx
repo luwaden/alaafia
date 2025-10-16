@@ -25,13 +25,13 @@ export default function MeaningSection() {
             variants={fadeInUp}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white leading-tight"
           >
-            The Meaning of Àlàáfíà
+            The Meaning of Alaafia
           </motion.h2>
           <motion.p
             variants={fadeInUp}
             className="text-lg md:text-xl text-white/95 leading-relaxed"
           >
-            In Yoruba, <span className="font-semibold">Àlàáfíà</span> means peace, wholeness, and wellbeing. For us, it's more than a 
+            In Yoruba, <span className="font-semibold">Alaafia</span> means peace, wholeness, and wellbeing. For us, it's more than a 
             name. It's a promise — that prosperity should feel possible, even for the smallest 
             trader, and that finance can finally work with the people, for the people, and by the 
             people.

@@ -33,7 +33,7 @@ export default function PromiseSection() {
             variants={fadeInUp}
             className="text-3xl md:text-4xl lg:text-5xl font-bold text-white mb-6 leading-tight"
           >
-            Àlàáfíà Means Peace and Wellbeing.
+            Alaafia Means Peace and Wellbeing.
           </motion.h2>
           <motion.p
             variants={fadeInUp}

@@ -7,12 +7,12 @@ import { fadeInUp, staggerContainer } from '@/components/lib/animations';
 export default function ImpactStatsSection() {
   const stats = [
     {
-      value: '₦8M+',
+      value: '$6,000',
       label: 'disbursed to nano-businesses across Oyo State',
       size: 'normal',
     },
     {
-      value: '59 businesses',
+      value: '71 nano-businesses',
       label: 'supported across 5 geopoltical zones',
       size: 'large',
     },
